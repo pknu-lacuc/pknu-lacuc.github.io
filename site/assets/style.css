@@ -154,7 +154,7 @@ img { display: block; max-width: 100%; }
 .paper-item p { margin: 0; color: var(--muted); font-size: .9rem; }
 .alumni-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0; padding: 0; border-top: 1px solid var(--pknu-navy); border-left: 1px solid var(--line); list-style: none; }
 .alumni-grid li { min-height: 125px; display: flex; align-items: center; padding: 1.8rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: clamp(1.25rem, 2vw, 1.7rem); font-weight: 700; letter-spacing: -.045em; }
-.alumni-grid small { display: block; font-size: .55em; font-weight: 500; letter-spacing: 0; }
+.alumni-grid small { display: block; margin-top: .2rem; color: var(--muted); font-size: .9rem; font-weight: 500; line-height: 1.4; letter-spacing: 0; overflow-wrap: anywhere; }
 
 .site-footer { border-top: 4px solid var(--pknu-navy); background: var(--ink); color: var(--paper); }
 .footer-inner { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 2rem; padding-block: 4rem 3rem; }
