@@ -148,9 +148,18 @@ img { display: block; max-width: 100%; }
 .gallery-card figcaption { padding: .6rem .9rem; border-top: 1px solid var(--line); background: var(--paper); color: var(--ink); font-size: .94rem; font-weight: 700; line-height: 1.5; text-align: center; }
 
 .field-list { border-top: 1px solid var(--pknu-navy); }
-.field-row { display: flex; align-items: center; gap: 1.5rem; padding-block: 1.7rem; border-bottom: 1px solid var(--line); }
-.field-row::before { width: 8px; height: 8px; flex: none; background: var(--pknu-cyan); content: ""; }
-.field-row h3 { margin: 0; font-size: clamp(1.25rem, 2vw, 1.65rem); letter-spacing: -.045em; }
+.field-row { border-bottom: 1px solid var(--line); }
+.field-row summary { display: flex; align-items: center; gap: 1.5rem; padding-block: 1.7rem; list-style: none; cursor: pointer; }
+.field-row summary::-webkit-details-marker { display: none; }
+.field-row summary::before { width: 8px; height: 8px; flex: none; background: var(--pknu-cyan); content: ""; }
+.field-row summary::after { width: .65rem; height: .65rem; flex: none; margin: -.35rem .4rem 0 0; border-right: 2px solid var(--pknu-navy); border-bottom: 2px solid var(--pknu-navy); transform: rotate(45deg); transition: transform .2s; content: ""; }
+.field-row[open] summary::after { margin-top: .35rem; transform: rotate(225deg); }
+.field-row summary:hover h3, .field-row[open] h3 { color: var(--pknu-navy); }
+.field-row h3 { flex: 1; margin: 0; font-size: clamp(1.25rem, 2vw, 1.65rem); letter-spacing: -.045em; }
+.field-content { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1fr); gap: clamp(1.5rem, 5vw, 4rem); align-items: center; padding: 0 0 2rem 1.5rem; }
+.field-content p { margin: 0; max-width: 58ch; color: var(--muted); font-size: 1rem; line-height: 1.85; }
+.field-figure { margin: 0; border: 1px solid var(--line); background: var(--soft); }
+.field-figure img { width: 100%; height: auto; }
 .paper-list { border-top: 1px solid var(--ink); }
 .paper-item { display: grid; grid-template-columns: 72px 1fr; gap: 1.5rem; padding-block: 1.4rem; border-bottom: 1px solid var(--line); }
 .paper-year { color: var(--pknu-navy); font-family: Arial, sans-serif; font-weight: 800; }
@@ -185,6 +194,7 @@ img { display: block; max-width: 100%; }
 
 @media (max-width: 800px) {
   .member-grid { grid-template-columns: 1fr; }
+  .field-content { grid-template-columns: 1fr; padding-left: 0; }
 }
 
 @media (max-width: 640px) {
