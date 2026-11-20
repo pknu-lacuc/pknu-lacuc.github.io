@@ -29,3 +29,29 @@ if (menuButton && menu) {
 document.querySelectorAll('[data-year]').forEach((element) => {
   element.textContent = new Date().getFullYear();
 });
+
+document.querySelectorAll('[data-copy-email]').forEach((button) => {
+  const feedback = button.nextElementSibling;
+  if (!feedback?.classList.contains('copy-feedback')) return;
+  let clearFeedback;
+
+  if (button.dataset.copyEmail) {
+    button.setAttribute('aria-label', `${button.dataset.copyEmail} 복사`);
+  }
+
+  button.addEventListener('click', async () => {
+    const email = button.dataset.copyEmail;
+    if (!email) return;
+
+    try {
+      if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
+      await navigator.clipboard.writeText(email);
+      feedback.textContent = '복사됨';
+    } catch {
+      feedback.textContent = '복사 실패';
+    }
+
+    window.clearTimeout(clearFeedback);
+    clearFeedback = window.setTimeout(() => { feedback.textContent = ''; }, 2000);
+  });
+});
