@@ -1,3 +1,3 @@
-# LACUC 홈페이지
+# LACUC
 
-국립부경대학교 LACUC 연구실 홈페이지입니다.
+국립부경대학교 LACUC (Lab. of Applied Cryptography & Ubiquitous Computing) 연구실 홈페이지입니다.
