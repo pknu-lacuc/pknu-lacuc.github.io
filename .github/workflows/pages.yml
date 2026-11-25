@@ -15,11 +15,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -31,6 +28,30 @@ jobs:
         uses: actions/upload-pages-artifact@v4
         with:
           path: ./site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment_first.outputs.page_url || steps.deployment_second.outputs.page_url || steps.deployment_final.outputs.page_url }}
+    steps:
       - name: Deploy Pages
-        id: deployment
+        id: deployment_first
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - name: Wait before retry
+        if: ${{ steps.deployment_first.outcome == 'failure' }}
+        run: sleep 30
+      - name: Retry Pages deployment
+        if: ${{ steps.deployment_first.outcome == 'failure' }}
+        id: deployment_second
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - name: Wait before final retry
+        if: ${{ steps.deployment_first.outcome == 'failure' && steps.deployment_second.outcome == 'failure' }}
+        run: sleep 60
+      - name: Final Pages deployment attempt
+        if: ${{ steps.deployment_first.outcome == 'failure' && steps.deployment_second.outcome == 'failure' }}
+        id: deployment_final
         uses: actions/deploy-pages@v4
