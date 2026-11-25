@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">AI-Assisted Digital Forensics</title>
+  <desc id="desc">Digital evidence from logs and devices passes through AI analysis to reconstruct and trace an incident.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M2 2 10 6 2 10" fill="none" stroke="#00aadd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="640" height="360" fill="#ffffff"/>
+  <rect x="24" y="24" width="592" height="312" rx="24" fill="#f5f7f8" stroke="#d8e5ec" stroke-width="2"/>
+
+  <!-- Evidence: a log and a device -->
+  <rect x="66" y="98" width="94" height="142" rx="14" fill="#ffffff" stroke="#004b8b" stroke-width="4"/>
+  <path d="M83 124h60" stroke="#00aadd" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="87" cy="150" r="5" fill="#00aadd"/>
+  <circle cx="87" cy="174" r="5" fill="#00aadd"/>
+  <circle cx="87" cy="198" r="5" fill="#00aadd"/>
+  <path d="M101 150h40M101 174h30M101 198h36" stroke="#004b8b" stroke-width="4" stroke-linecap="round"/>
+  <rect x="143" y="122" width="53" height="115" rx="11" fill="#ffffff" stroke="#004b8b" stroke-width="4"/>
+  <rect x="151" y="137" width="37" height="73" rx="3" fill="#e9f7fb"/>
+  <path d="M158 154h23m-23 13h19m-19 13h23" stroke="#00aadd" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="170" cy="222" r="4" fill="#004b8b"/>
+
+  <path d="M203 176h32M402 176h38" fill="none" stroke="#00aadd" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <!-- Analysis: a visible AI chip and magnifier -->
+  <rect x="246" y="88" width="148" height="160" rx="21" fill="#ffffff" stroke="#004b8b" stroke-width="4"/>
+  <rect x="273" y="112" width="94" height="101" rx="14" fill="#e9f7fb" stroke="#004b8b" stroke-width="4"/>
+  <path d="M285 103v9m23-9v9m23-9v9m23-9v9M285 213v10m23-10v10m23-10v10m23-10v10" stroke="#004b8b" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="311" cy="154" r="23" fill="#ffffff" stroke="#004b8b" stroke-width="4"/>
+  <path d="m329 172 20 20" stroke="#004b8b" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="301" cy="150" r="4" fill="#00aadd"/>
+  <circle cx="316" cy="145" r="4" fill="#00aadd"/>
+  <circle cx="314" cy="160" r="4" fill="#00aadd"/>
+  <path d="m301 150 15-5-2 15-13-10" fill="none" stroke="#00aadd" stroke-width="2"/>
+
+  <!-- Reconstruction: ordered events and traceable source -->
+  <rect x="452" y="98" width="132" height="142" rx="17" fill="#ffffff" stroke="#004b8b" stroke-width="4"/>
+  <path d="M477 127v79" stroke="#b7d2e2" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="477" cy="134" r="8" fill="#00aadd"/>
+  <circle cx="477" cy="169" r="8" fill="#00aadd"/>
+  <circle cx="477" cy="204" r="8" fill="#00aadd"/>
+  <path d="M497 134h61M497 169h47M497 204h55" stroke="#004b8b" stroke-width="4" stroke-linecap="round"/>
+  <path d="m547 216 11 9 14-17" fill="none" stroke="#00aadd" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g fill="#004b8b" font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="22" font-weight="700" text-anchor="middle">
+    <text x="132" y="289">Evidence</text>
+    <text x="320" y="289">AI analysis</text>
+    <text x="518" y="289">Incident trace</text>
+  </g>
+</svg>
