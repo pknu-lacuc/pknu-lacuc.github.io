@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">AI 에이전트 신원 검증과 권한 위임</title>
+  <desc id="desc">왼쪽 위의 사람이 신원 확인을 거쳐 아래 중앙 AI 에이전트에 작업을 맡기고, 에이전트가 범위가 제한된 권한 토큰을 오른쪽 위의 다른 에이전트에 위임하는 흐름</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M2 2 10 6 2 10" fill="none" stroke="#00aadd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="640" height="360" fill="#ffffff"/>
+  <rect x="24" y="24" width="592" height="312" rx="24" fill="#f5f7f8" stroke="#d8e5ec" stroke-width="2"/>
+  <path d="M178 164c36 5 36 49 66 59M396 223c30-10 32-54 58-59" fill="none" stroke="#00aadd" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <rect x="61" y="69" width="126" height="110" rx="18" fill="#ffffff" stroke="#004b8b" stroke-width="4"/>
+  <circle cx="124" cy="109" r="16" fill="#e9f7fb" stroke="#004b8b" stroke-width="3"/>
+  <path d="M92 158c3-22 15-34 32-34s29 12 32 34" fill="#e9f7fb" stroke="#004b8b" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="215" cy="189" r="20" fill="#00aadd" stroke="#ffffff" stroke-width="4"/>
+  <path d="m205 189 7 7 12-14" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="244" y="174" width="152" height="133" rx="20" fill="#ffffff" stroke="#004b8b" stroke-width="4"/>
+  <path d="M267 190h106" stroke="#00aadd" stroke-width="5" stroke-linecap="round"/>
+  <rect x="280" y="207" width="80" height="76" rx="14" fill="#e9f7fb" stroke="#004b8b" stroke-width="4"/>
+  <path d="M293 199v8m18-8v8m18-8v8m18-8v8M293 283v8m18-8v8m18-8v8m18-8v8" stroke="#004b8b" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="303" cy="238" r="5" fill="#00aadd"/><circle cx="337" cy="238" r="5" fill="#00aadd"/>
+  <path d="M307 260c7 6 19 6 26 0" fill="none" stroke="#004b8b" stroke-width="3" stroke-linecap="round"/>
+  <rect x="407" y="171" width="46" height="38" rx="9" fill="#ffffff" stroke="#004b8b" stroke-width="3"/>
+  <circle cx="421" cy="187" r="5" fill="none" stroke="#00aadd" stroke-width="3"/>
+  <path d="M426 187h16m-7 0v6m6-6v4" fill="none" stroke="#00aadd" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M412 201h36" stroke="#d8e5ec" stroke-width="2" stroke-linecap="round"/>
+  <rect x="453" y="69" width="126" height="110" rx="18" fill="#ffffff" stroke="#004b8b" stroke-width="4"/>
+  <rect x="484" y="94" width="64" height="62" rx="12" fill="#e9f7fb" stroke="#004b8b" stroke-width="3"/>
+  <path d="M497 86v8m19-8v8m19-8v8M497 156v8m19-8v8m19-8v8" stroke="#004b8b" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="502" cy="120" r="5" fill="#00aadd"/><circle cx="530" cy="120" r="5" fill="#00aadd"/>
+  <path d="M504 140h24" stroke="#004b8b" stroke-width="3" stroke-linecap="round"/>
+</svg>
